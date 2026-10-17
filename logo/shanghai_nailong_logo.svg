@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- 上半环文字路径 (半径 405) -->
+    <path id="arc-top" d="M 95,500 A 405,405 0 0,1 905,500" fill="none" />
+    <!-- 下半环文字路径 (从右下到左下，使文字沿外弧正向排列) -->
+    <path id="arc-bottom" d="M 905,500 A 405,405 0 0,1 95,500" fill="none" />
+
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#fffef7"/>
+      <stop offset="70%" stop-color="#fff8e7"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </radialGradient>
+
+    <filter id="sealShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <g id="shanghai-nailong-seal" filter="url(#sealShadow)">
+    <!-- 外层主圆环：上科大经典正红 (#9D0A12) + 金边 -->
+    <circle cx="500" cy="500" r="480" fill="#9D0A12" stroke="#f59e0b" stroke-width="7"/>
+
+    <!-- 经典虚线金圈 -->
+    <circle cx="500" cy="500" r="462" fill="none" stroke="#fef08a" stroke-width="2.5" stroke-dasharray="10 6"/>
+
+    <!-- 文字环与内芯分界金环 -->
+    <circle cx="500" cy="500" r="345" fill="none" stroke="#f59e0b" stroke-width="4.5"/>
+
+    <!-- 16 瓣波浪齿轮装饰环 (上海科技大学校徽经典学术齿轮元素) -->
+    <path d="M 784.00,500.00 829.54,565.55 762.38,608.68 779.37,686.67 700.82,700.82 686.67,779.37 608.68,762.38 565.55,829.54 500.00,784.00 434.45,829.54 391.32,762.38 313.33,779.37 299.18,700.82 220.63,686.67 237.62,608.68 170.46,565.55 216.00,500.00 170.46,434.45 237.62,391.32 220.63,313.33 299.18,299.18 313.33,220.63 391.32,237.62 434.45,170.46 500.00,216.00 565.55,170.46 608.68,237.62 686.67,220.63 700.82,299.18 779.37,313.33 762.38,391.32 829.54,434.45 Z" fill="#9D0A12" stroke="#f59e0b" stroke-width="3" />
+
+    <!-- 中心圆盘底衬 -->
+    <circle cx="500" cy="500" r="275" fill="url(#centerGlow)" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="500" cy="500" r="266" fill="none" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="6 4"/>
+
+    <!-- 上半环文字：真 · 上海奶龙大学 -->
+    <text fill="#ffffff" font-family="'Noto Sans SC', 'SimHei', 'Microsoft YaHei', sans-serif" font-weight="900" font-size="52" letter-spacing="12">
+      <textPath xlink:href="#arc-top" startOffset="50%" text-anchor="middle">
+        真 · 上海奶龙大学
+      </textPath>
+    </text>
+
+    <!-- 左右对称五角星 -->
+    <g fill="#fde047" font-size="34" font-family="sans-serif">
+      <text x="88" y="512" text-anchor="middle">★</text>
+      <text x="912" y="512" text-anchor="middle">★</text>
+    </g>
+
+    <!-- 下半环文字：SHANGHAI NAILONG UNIVERSITY -->
+    <text fill="#ffffff" font-family="'Arial', 'Helvetica', sans-serif" font-weight="800" font-size="34" letter-spacing="4.5">
+      <textPath xlink:href="#arc-bottom" startOffset="50%" text-anchor="middle">
+        SHANGHAI NAILONG UNIVERSITY
+      </textPath>
+    </text>
+
+    <!-- 中心奶蛙吉祥物 -->
+    <g transform="translate(325, 280)">
+      <!-- 地面微阴影 -->
+      <ellipse cx="175" cy="380" rx="110" ry="20" fill="rgba(0,0,0,0.18)" />
+      <!-- 奶蛙高清透明立绘 -->
+      <image xlink:href="data:image/png;base64,{naiwa_b64}" width="350" height="395" />
+    </g>
+
+    <!-- 建校年份勋章：EST. 2026 -->
+    <g transform="translate(500, 716)">
+      <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#9D0A12" stroke="#fde047" stroke-width="2.5"/>
+      <text x="0" y="7" fill="#fde047" font-family="'Arial', sans-serif" font-weight="900" font-size="19" letter-spacing="3" text-anchor="middle">
+        EST. 2026
+      </text>
+    </g>
+  </g>
+</svg>
