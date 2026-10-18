@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>上海奶龙大学 (上海科技大学非官方) | 域名刚下来，明天配一下！</title>
+  <title>上海奶龙大学 (上海科技大学非官方门户)</title>
   <link rel="icon" href="logo/shanghai_nailong_logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,56 +277,7 @@
     .notice-desc p {
       margin-bottom: 10px;
     }
-
-    /* 倒计时条 */
-    .countdown-box {
-      background: rgba(15, 23, 42, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 16px;
-      padding: 16px 20px;
-      margin-bottom: 28px;
-    }
-
-    .countdown-title {
-      font-size: 0.88rem;
-      color: #94a3b8;
-      margin-bottom: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .timer-units {
-      display: flex;
-      gap: 12px;
-    }
-
-    .timer-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .timer-num {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 6px 14px;
-      border-radius: 8px;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 1.45rem;
-      font-weight: 800;
-      color: #fde047;
-      min-width: 48px;
-      text-align: center;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
-    }
-
-    .timer-lbl {
-      font-size: 0.75rem;
-      color: #64748b;
-      margin-top: 5px;
-    }
-
-    /* 交互按钮组 */
+    /* 快捷按钮组 */
     .action-group {
       display: flex;
       flex-wrap: wrap;
@@ -467,12 +418,12 @@
       margin-top: 4px;
     }
 
-    /* 下方卡片：部署日志 & 院系介绍 */
+    /* 下方卡片：书院与学院专区 */
     .grid-info {
       width: 100%;
       margin-top: 36px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.55fr;
       gap: 24px;
     }
 
@@ -502,38 +453,16 @@
       color: #f1f5f9;
     }
 
-    /* 终端样式 */
-    .terminal-logs {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.86rem;
-      line-height: 1.85;
-      color: #a5f3fc;
-      background: rgba(15, 23, 42, 0.85);
-      border-radius: 12px;
-      padding: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+    /* 2列学院网格 */
+    .dept-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
     }
-
-    .log-item {
-      display: flex;
-      gap: 10px;
-    }
-
-    .log-time {
-      color: #64748b;
-      user-select: none;
-    }
-
-    .log-ok {
-      color: #4ade80;
-    }
-
-    .log-warn {
-      color: #facc15;
-    }
-
-    .log-info {
-      color: #38bdf8;
+    @media (max-width: 600px) {
+      .dept-grid-2col {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* 院系卡片列表 */
@@ -688,11 +617,11 @@
       <!-- 左侧内容 -->
       <div class="card-left">
         <div class="notice-tag">
-          <span>🚨</span> 上海科技大学非官方筹备组特急通告
+          <span>📢</span> 上海科技大学非官方门户 · 正式通告
         </div>
         <h2 class="notice-headline">
-          域名刚下来！<br>
-          <span class="highlight-text">明天配一下 ☕</span>
+          全域服务现已就绪 ✨<br>
+          <span class="highlight-text">欢迎来到上海奶龙大学 🎓</span>
         </h2>
         
         <div class="notice-desc">
@@ -700,47 +629,24 @@
             各位敬爱的上科大师生、未来校友、社会各界奶友及吃瓜群众：
           </p>
           <p>
-            <strong>本页面为上海科技大学非官方民间娱乐页面</strong>，感谢 <code>奶龙大学.com</code> 域名持有者的倾情赞助与支持！
+            <strong>本站为上海科技大学（ShanghaiTech）非官方民间门户与创新导航站</strong>，旨在为广大师生与校友提供温馨便捷的校园快捷导航与精神滋养。
           </p>
           <p>
-            由于网管今天喝奶茶喝撑了，目前困意袭来，<strong>DNS解析、全站CDN加速、SSL证书以及吉祥物高清图库</strong> 将于明天一早全面配置到位。
+            全站专线现已全量就绪！三大书院、各大专业学院及教务科研系统直达入口均已畅通。在校宠奶蛙的监督与陪伴下，祝愿大家学业有成、科研顺利，每天都能吸上一口浓郁纯真的奶茶！
           </p>
-          <p style="font-size: 0.9rem; color: #94a3b8; border-left: 2px solid #f59e0b; padding-left: 10px; margin-top: 10px; line-height: 1.6;">
-            💡 <strong>迷路指引：</strong>若您是来找正经正统上科大官网的，直接点击上方大标题 <strong>「上海奶龙大学 ↗」</strong> 即可一键瞬移至 <a href="https://www.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">上海科技大学官方主页</a>！下方三大书院与教务系统直达入口均已备妥。
+          <p style="font-size: 0.9rem; color: #94a3b8; border-left: 2px solid #f59e0b; padding-left: 10px; margin-top: 14px; line-height: 1.6;">
+            💡 <strong>正统官网直达：</strong>如需办理官方事务或访问正统门户，可直接点击页面大标题 <strong>「上海奶龙大学 ↗」</strong> 或下方按钮直通 <a href="https://www.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">上海科技大学官方主页</a>。
           </p>
         </div>
 
-        <!-- 倒计时模块 -->
-        <div class="countdown-box">
-          <div class="countdown-title">
-            <span>⏱️ 距离网管明天起床敲代码预计还有</span>
-            <span style="color: #4ade80;">网络状态: 极度放松</span>
-          </div>
-          <div class="timer-units">
-            <div class="timer-block">
-              <span class="timer-num" id="cd-h">08</span>
-              <span class="timer-lbl">小时</span>
-            </div>
-            <div class="timer-block">
-              <span class="timer-num" id="cd-m">30</span>
-              <span class="timer-lbl">分钟</span>
-            </div>
-            <div class="timer-block">
-              <span class="timer-num" id="cd-s">00</span>
-              <span class="timer-lbl">秒</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 互动按钮 -->
+        <!-- 官方直达与快捷操作按钮 -->
         <div class="action-group">
-          <button class="btn btn-primary" id="btn-cheer">
-            <span>⚡ 给网管送奶茶 (催促上线)</span>
-            <span id="cheer-count" style="background: rgba(0,0,0,0.22); padding: 2px 8px; border-radius: 8px; font-size: 0.85rem;">88</span>
-          </button>
-          <button class="btn btn-secondary" id="btn-notice">
-            <span>🎁 领取开学芝士大礼包</span>
-          </button>
+          <a href="https://www.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" class="btn btn-primary" title="点击访问上海科技大学官方门户">
+            <span>🏛️ 前往上海科技大学官网 ↗</span>
+          </a>
+          <a href="logo/shanghai_nailong_logo.png" target="_blank" download="shanghai_nailong_logo.png" class="btn btn-secondary" title="下载上海奶龙大学官方校徽">
+            <span>🎓 下载官方校徽</span>
+          </a>
         </div>
       </div>
 
@@ -748,13 +654,13 @@
       <div class="card-right mascot-showcase">
         <div class="mascot-frame">
           <div class="float-chip chip-top-right">
-            <span>🟢</span> 状态: 监工喝茶中
+            <span>🟢</span> 状态: 营业喝茶中
           </div>
           <div class="float-chip chip-bottom-left">
             <span>🎓</span> 荣誉校宠 · 工号 001
           </div>
 
-          <!-- 奶蛙图像：已生成的可爱立体立绘 -->
+          <!-- 奶蛙图像：立体正装立绘 -->
           <img src="naiwa.jpg" 
                alt="上海奶龙大学荣誉吉祥物·奶蛙" 
                class="mascot-img" 
@@ -765,50 +671,14 @@
           <div class="mascot-name">
             <span>🐸 奶蛙本蛙 (Naiwa)</span>
           </div>
-          <div class="mascot-role">特级网络总工程师兼情绪价值专员</div>
+          <div class="mascot-role">特级学术导师兼校园精神领袖</div>
         </div>
       </div>
     </main>
 
-    <!-- 下方资讯模块：终端部署日志 & 院系介绍 -->
+    <!-- 下方资讯模块：书院的天空 & 专业学院与研究所 -->
     <section class="grid-info">
-      <!-- 终端日志 -->
-      <div class="glass-box">
-        <div class="box-header">
-          <div class="box-title">
-            <span>💻</span> 机房直连部署终端
-          </div>
-          <span style="font-size: 0.8rem; color: #10b981;">● RUNNING</span>
-        </div>
-        <div class="terminal-logs">
-          <div class="log-item">
-            <span class="log-time">[00:01:12]</span>
-            <span class="log-ok">[OK] 顶级域名核准完毕</span>
-          </div>
-          <div class="log-item">
-            <span class="log-time">[00:05:43]</span>
-            <span class="log-ok">[OK] 奶蛙已就位，开始监工机柜跳线</span>
-          </div>
-          <div class="log-item">
-            <span class="log-time">[00:12:00]</span>
-            <span class="log-info">[INFO] Nginx 与 SSL 预编译已备妥</span>
-          </div>
-          <div class="log-item">
-            <span class="log-time">[00:15:20]</span>
-            <span class="log-warn">[WAIT] 网管打了个哈欠：明天再配！</span>
-          </div>
-          <div class="log-item">
-            <span class="log-time">[00:16:05]</span>
-            <span class="log-info">[ROUTE] 直通正牌上科大官网专线已就绪 (shanghaitech.edu.cn)</span>
-          </div>
-          <div class="log-item">
-            <span class="log-time">[SYS_RT]</span>
-            <span class="log-ok">> 预计全量就绪：明天早八！</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 书院的天空 -->
+      <!-- 1. 书院的天空 (三大本科生书院) -->
       <div class="glass-box">
         <div class="box-header">
           <div class="box-title">
@@ -818,25 +688,102 @@
         </div>
         <div class="dept-list">
           <a href="https://shangdao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问上奶书院 (上道书院)">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.25rem;">🏮</span>
-              <span class="dept-name">上奶书院</span>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.35rem;">🏮</span>
+              <div>
+                <div class="dept-name">上奶书院</div>
+                <div style="font-size: 0.76rem; color: #94a3b8; margin-top: 2px;">弘道立德 · 上道书院</div>
+              </div>
             </div>
             <span class="dept-status">上道直达 ↗</span>
           </a>
           <a href="https://kedao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问科奶书院 (科道书院)">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.25rem;">🧪</span>
-              <span class="dept-name">科奶书院</span>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.35rem;">🧪</span>
+              <div>
+                <div class="dept-name">科奶书院</div>
+                <div style="font-size: 0.76rem; color: #94a3b8; margin-top: 2px;">探索求真 · 科道书院</div>
+              </div>
             </div>
             <span class="dept-status">科道直达 ↗</span>
           </a>
           <a href="https://dadao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问大奶书院 (大道书院)">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 1.25rem;">📜</span>
-              <span class="dept-name">大奶书院</span>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.35rem;">📜</span>
+              <div>
+                <div class="dept-name">大奶书院</div>
+                <div style="font-size: 0.76rem; color: #94a3b8; margin-top: 2px;">大道至简 · 大道书院</div>
+              </div>
             </div>
             <span class="dept-status">大道直达 ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. 专业学院与研究所 -->
+      <div class="glass-box">
+        <div class="box-header">
+          <div class="box-title">
+            <span>🏛️</span> 专业学院与研究所
+          </div>
+          <span style="font-size: 0.8rem; color: #f59e0b;">前沿学术 · 科研高地</span>
+        </div>
+        <div class="dept-grid-2col">
+          <a href="https://slst.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问生命科学与技术学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>🧬</span>
+              <span class="dept-name">生命学院</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://spst.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问物质科学与技术学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>⚛️</span>
+              <span class="dept-name">物质学院</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://sist.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问信息科学与技术学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>💻</span>
+              <span class="dept-name">信息学院</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://sem.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问创业与管理学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>📈</span>
+              <span class="dept-name">创管学院</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://sca.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问创意与艺术学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>🎨</span>
+              <span class="dept-name">创意学院</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://ih.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问人文科学研究院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>📖</span>
+              <span class="dept-name">人文</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://bme.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问生物医学工程学院">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>🩺</span>
+              <span class="dept-name">生医工</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
+          </a>
+          <a href="https://ims.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问数学科学研究所">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>📐</span>
+              <span class="dept-name">数学研究所</span>
+            </div>
+            <span class="dept-status">直达 ↗</span>
           </a>
         </div>
       </div>
@@ -845,8 +792,8 @@
     <!-- 页脚说明 -->
     <footer>
       <p>© 2026 真 上海奶龙大学 (Real Shanghai Nailong University). All Rights Reserved.</p>
-      <p style="margin-top: 4px; font-size: 0.82rem;">
-        域名刚刚审批通过，明天配置完成 · 官方指定网络监工：奶蛙
+      <p style="margin-top: 4px; font-size: 0.82rem; color: #94a3b8;">
+        上海科技大学非官方民间主页 · 荣誉校宠：奶蛙本蛙 (工号 001)
       </p>
       <div class="footer-links">
         <a href="logo/shanghai_nailong_logo.png" target="_blank" download="shanghai_nailong_logo.png">🎓 校徽下载</a>
@@ -908,26 +855,7 @@
     }
     animateParticles();
 
-    // 2. 动态倒计时到明天上午 09:00
-    function updateCountdown() {
-      const now = new Date();
-      const tomorrow = new Date();
-      tomorrow.setDate(now.getDate() + 1);
-      tomorrow.setHours(9, 0, 0, 0);
-
-      const diff = Math.max(0, tomorrow - now);
-      const hours = Math.floor(diff / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      document.getElementById('cd-h').textContent = String(hours).padStart(2, '0');
-      document.getElementById('cd-m').textContent = String(minutes).padStart(2, '0');
-      document.getElementById('cd-s').textContent = String(seconds).padStart(2, '0');
-    }
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-
-    // 3. 网页音效合成器 (Web Audio API - 产生 Q 弹奶茶/气泡音)
+    // 2. 网页音效合成器 (Web Audio API - 产生 Q 弹奶茶/气泡音)
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     let audioCtx = null;
 
@@ -955,39 +883,36 @@
       }
     }
 
-    // 4. 送奶茶催促互动
-    const cheerBtn = document.getElementById('btn-cheer');
-    const cheerCountEl = document.getElementById('cheer-count');
-    let cheerCount = parseInt(localStorage.getItem('nailong_cheers') || '88');
-    cheerCountEl.textContent = cheerCount;
+    // 3. 点击奶蛙立绘与校徽飘飞 Q 弹互动气泡
+    const mascotFrame = document.querySelector('.mascot-frame');
+    const univLogo = document.querySelector('.univ-logo-img');
+    const emojis = ['🧋', '🍵', '🐸', '✨', '🎓', '❤️', '🌟', '☕'];
 
-    const emojis = ['🧋', '🍵', '🐸', '🐉', '✨', '💨', '🌭', '🧀', '❤️'];
-
-    cheerBtn.addEventListener('click', (e) => {
-      cheerCount++;
-      cheerCountEl.textContent = cheerCount;
-      localStorage.setItem('nailong_cheers', cheerCount);
+    function createBubble(x, y) {
       playPopSound();
-
-      // 飘飞表情气泡
       const bubble = document.createElement('div');
       bubble.className = 'click-bubble';
       bubble.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      bubble.style.left = e.clientX + (Math.random() * 40 - 20) + 'px';
-      bubble.style.top = e.clientY + 'px';
+      bubble.style.left = x + (Math.random() * 40 - 20) + 'px';
+      bubble.style.top = y + 'px';
       document.body.appendChild(bubble);
 
       setTimeout(() => {
         bubble.remove();
       }, 1200);
-    });
+    }
 
-    // 5. 领礼包弹窗
-    const noticeBtn = document.getElementById('btn-notice');
-    noticeBtn.addEventListener('click', () => {
-      playPopSound();
-      alert('🎉 恭喜领取「上海奶龙大学」新生开学礼包：\n\n🌭 顶配脆皮烤肠 x 1\n🧀 特浓芝士片 x 2\n🐸 奶蛙同款早八免醒金牌 x 1\n\n网管表示收到了大家的心意，明天一早准时上线解析！');
-    });
+    if (mascotFrame) {
+      mascotFrame.addEventListener('click', (e) => {
+        createBubble(e.clientX, e.clientY);
+      });
+    }
+
+    if (univLogo) {
+      univLogo.addEventListener('click', (e) => {
+        createBubble(e.clientX, e.clientY);
+      });
+    }
   </script>
 </body>
 </html>
