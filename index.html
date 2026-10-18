@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>真 · 上海奶龙大学 | 域名刚下来，明天配一下！</title>
+  <title>上海奶龙大学 (上海科技大学非官方) | 域名刚下来，明天配一下！</title>
   <link rel="icon" href="logo/shanghai_nailong_logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -149,6 +149,21 @@
       margin-bottom: 24px;
     }
 
+    .main-title-link {
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .main-title-link:hover {
+      transform: scale(1.035) translateY(-3px);
+    }
+
+    .main-title-link:hover .main-title {
+      filter: drop-shadow(0 16px 45px rgba(245, 158, 11, 0.6));
+    }
+
     .main-title {
       font-family: 'ZCOOL KuaiLe', 'Noto Sans SC', sans-serif;
       font-size: clamp(3rem, 7.5vw, 5.2rem);
@@ -160,6 +175,7 @@
       filter: drop-shadow(0 12px 35px rgba(245, 158, 11, 0.35));
       letter-spacing: 2px;
       margin-bottom: 8px;
+      transition: filter 0.3s ease;
     }
 
     .en-title {
@@ -532,15 +548,18 @@
       align-items: center;
       justify-content: space-between;
       background: rgba(255, 255, 255, 0.04);
-      padding: 12px 16px;
+      padding: 13px 18px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.06);
-      transition: all 0.2s ease;
+      transition: all 0.22s ease;
+      text-decoration: none;
+      color: inherit;
     }
 
     .dept-item:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.09);
       transform: translateX(4px);
+      border-color: rgba(245, 158, 11, 0.35);
     }
 
     .dept-name {
@@ -569,9 +588,11 @@
 
     .footer-links {
       display: flex;
-      gap: 16px;
+      gap: 10px 18px;
       justify-content: center;
-      margin-top: 10px;
+      align-items: center;
+      margin-top: 14px;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
@@ -582,6 +603,10 @@
 
     .footer-links a:hover {
       color: #fde047;
+    }
+
+    .footer-links span {
+      color: #475569;
     }
 
     /* 点击升起的爱心与奶茶表情 */
@@ -634,20 +659,27 @@
     <!-- 顶部状态胶囊 -->
     <div class="header-badge">
       <span class="badge-dot"></span>
-      <span>奶龙重点筹备高校</span>
+      <span>上海科技大学非官方页面 · 纯真奶龙精神分部</span>
     </div>
 
     <!-- 网页大标题 & 官方校徽 -->
     <header class="main-title-wrap">
       <div class="logo-badge-container">
-        <a href="logo/shanghai_nailong_logo.png" target="_blank" title="点击查看/下载高清矢量校徽">
+        <a href="logo/shanghai_nailong_logo.png" target="_blank" title="点击查看/下载高清校徽">
           <img src="logo/shanghai_nailong_logo.png" alt="真·上海奶龙大学官方校徽" class="univ-logo-img" />
         </a>
       </div>
-      <h1 class="main-title">真 上海奶龙大学</h1>
-      <p class="en-title">REAL SHANGHAI NAILONG UNIVERSITY</p>
+      <div>
+        <a href="https://www.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" class="main-title-link" title="点击直通正统：上海科技大学官方门户 (www.shanghaitech.edu.cn) ↗">
+          <h1 class="main-title">
+            上海奶龙大学
+            <span style="font-size: 0.42em; vertical-align: super; -webkit-text-fill-color: #fde047; opacity: 0.88;">↗</span>
+          </h1>
+        </a>
+      </div>
+      <p class="en-title">SHANGHAI NAILONG UNIVERSITY · UNOFFICIAL PORTAL</p>
       <div class="motto-bar">
-        立志，成才，报国，裕民
+        校训：立志 · 成才 · 报国 · 裕民 · 顺便吸口奶龙 ☕
       </div>
     </header>
 
@@ -656,7 +688,7 @@
       <!-- 左侧内容 -->
       <div class="card-left">
         <div class="notice-tag">
-          <span>🚨</span> 筹备工作组特急通告
+          <span>🚨</span> 上海科技大学非官方筹备组特急通告
         </div>
         <h2 class="notice-headline">
           域名刚下来！<br>
@@ -665,13 +697,16 @@
         
         <div class="notice-desc">
           <p>
-            各位敬爱的未来校友、社会各界奶友及吃瓜群众：
+            各位敬爱的上科大师生、未来校友、社会各界奶友及吃瓜群众：
           </p>
           <p>
-            <strong>真 · 上海奶龙大学</strong> 子域名刚刚申请下来，再次感谢`奶龙大学.com`域名所有者的支持！由于我今天喝奶茶喝撑了，目前困意袭来，<strong>DNS解析、全站CDN加速、SSL证书以及吉祥物高清图库</strong> 将于明天一早全面配置到位。
+            <strong>本页面为上海科技大学非官方民间娱乐页面</strong>，感谢 <code>奶龙大学.com</code> 域名持有者的倾情赞助与支持！
           </p>
           <p>
-            学校食堂烤肠与芝士供应充足，科研秩序井然。请大家稍安勿躁，今晚先睡个好觉，明天见！
+            由于网管今天喝奶茶喝撑了，目前困意袭来，<strong>DNS解析、全站CDN加速、SSL证书以及吉祥物高清图库</strong> 将于明天一早全面配置到位。
+          </p>
+          <p style="font-size: 0.9rem; color: #94a3b8; border-left: 2px solid #f59e0b; padding-left: 10px; margin-top: 10px; line-height: 1.6;">
+            💡 <strong>迷路指引：</strong>若您是来找正经正统上科大官网的，直接点击上方大标题 <strong>「上海奶龙大学 ↗」</strong> 即可一键瞬移至 <a href="https://www.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">上海科技大学官方主页</a>！下方三大书院与教务系统直达入口均已备妥。
           </p>
         </div>
 
@@ -763,57 +798,68 @@
             <span class="log-warn">[WAIT] 网管打了个哈欠：明天再配！</span>
           </div>
           <div class="log-item">
+            <span class="log-time">[00:16:05]</span>
+            <span class="log-info">[ROUTE] 直通正牌上科大官网专线已就绪 (shanghaitech.edu.cn)</span>
+          </div>
+          <div class="log-item">
             <span class="log-time">[SYS_RT]</span>
             <span class="log-ok">> 预计全量就绪：明天早八！</span>
           </div>
         </div>
       </div>
 
-      <!-- 院系规划 -->
+      <!-- 书院的天空 -->
       <div class="glass-box">
         <div class="box-header">
           <div class="box-title">
-            <span>🏛️</span> 重点学科建设规划
+            <span>🌌</span> 书院的天空
           </div>
-          <span style="font-size: 0.8rem; color: #f59e0b;">筹建评审中</span>
+          <span style="font-size: 0.8rem; color: #38bdf8;">本科生书院 · 育人社区</span>
         </div>
         <div class="dept-list">
-          <div class="dept-item">
-            <span class="dept-name">🍗 芝士与烤肠烹饪工程学院</span>
-            <span class="dept-status">A++ 级学科</span>
-          </div>
-          <div class="dept-item">
-            <span class="dept-name">🫧 吨吨大口喝水与吹泡泡系</span>
-            <span class="dept-status">双一流拔尖</span>
-          </div>
-          <div class="dept-item">
-            <span class="dept-name">🐸 奶蛙动力学与睡大觉研究所</span>
-            <span class="dept-status">国家重点专项</span>
-          </div>
-          <div class="dept-item">
-            <span class="dept-name">🐉 纯真奶龙行为艺术学院</span>
-            <span class="dept-status">全球领军</span>
-          </div>
+          <a href="https://shangdao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问上奶书院 (上道书院)">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.25rem;">🏮</span>
+              <span class="dept-name">上奶书院</span>
+            </div>
+            <span class="dept-status">上道直达 ↗</span>
+          </a>
+          <a href="https://kedao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问科奶书院 (科道书院)">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.25rem;">🧪</span>
+              <span class="dept-name">科奶书院</span>
+            </div>
+            <span class="dept-status">科道直达 ↗</span>
+          </a>
+          <a href="https://dadao.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="dept-item" title="点击访问大奶书院 (大道书院)">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.25rem;">📜</span>
+              <span class="dept-name">大奶书院</span>
+            </div>
+            <span class="dept-status">大道直达 ↗</span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- 页脚说明 -->
     <footer>
-      <p>© 2026上海奶龙大学 (Shanghai Nailong University). All Rights Reserved.</p>
+      <p>© 2026 真 上海奶龙大学 (Real Shanghai Nailong University). All Rights Reserved.</p>
       <p style="margin-top: 4px; font-size: 0.82rem;">
-        域名刚刚申请下来，明天配置完成 · 官方指定网络监工：奶蛙
+        域名刚刚审批通过，明天配置完成 · 官方指定网络监工：奶蛙
       </p>
       <div class="footer-links">
-        <a href="logo/shanghai_nailong_logo.png" target="_blank">🎓 官方校徽 (PNG)</a>
+        <a href="logo/shanghai_nailong_logo.png" target="_blank" download="shanghai_nailong_logo.png">🎓 校徽下载</a>
         <span>·</span>
-        <a href="logo/shanghai_nailong_logo.svg" target="_blank">📐 矢量校徽 (SVG)</a>
+        <a href="https://egate-new.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer">egate</a>
         <span>·</span>
-        <a href="javascript:void(0)" onclick="alert('招生办提示：明天配好网线再开门报名！')">招生办公室</a>
+        <a href="https://eams.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer">教务系统</a>
         <span>·</span>
-        <a href="javascript:void(0)" onclick="alert('教务处提示：学分支持用香肠芝士抵扣！')">教务在线</a>
+        <a href="https://elearning.shanghaitech.edu.cn:8443/" target="_blank" rel="noopener noreferrer">互动教学平台</a>
         <span>·</span>
-        <a href="javascript:void(0)" onclick="alert('校长信箱提示：给奶蛙留口奶喝就行～')">校长信箱</a>
+        <a href="https://ecourse.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer">E云课堂</a>
+        <span>·</span>
+        <a href="https://mail.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer">邮件系统</a>
       </div>
     </footer>
 
