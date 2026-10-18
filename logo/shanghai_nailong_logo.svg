@@ -35,10 +35,10 @@
     <circle cx="500" cy="500" r="275" fill="url(#centerGlow)" stroke="#f59e0b" stroke-width="4"/>
     <circle cx="500" cy="500" r="266" fill="none" stroke="#fde68a" stroke-width="1.8" stroke-dasharray="6 4"/>
 
-    <!-- 上半环文字：真 · 上海奶龙大学 -->
-    <text fill="#ffffff" font-family="'Noto Sans SC', 'SimHei', 'Microsoft YaHei', sans-serif" font-weight="900" font-size="52" letter-spacing="12">
+    <!-- 上半环文字：上海奶龙大学 -->
+    <text fill="#ffffff" font-family="'Noto Sans SC', 'SimHei', 'Microsoft YaHei', sans-serif" font-weight="900" font-size="56" letter-spacing="16">
       <textPath xlink:href="#arc-top" startOffset="50%" text-anchor="middle">
-        真 · 上海奶龙大学
+        上海奶龙大学
       </textPath>
     </text>
 
