@@ -98,7 +98,7 @@
     .container {
       position: relative;
       z-index: 2;
-      max-width: 1060px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 48px 20px 80px;
       display: flex;
@@ -260,10 +260,10 @@
       border-radius: 28px;
       backdrop-filter: blur(28px);
       box-shadow: 0 25px 65px rgba(0, 0, 0, 0.45), 0 0 45px rgba(245, 158, 11, 0.12);
-      padding: clamp(28px, 5vw, 48px);
+      padding: clamp(28px, 4.5vw, 44px);
       margin-top: 20px;
       display: grid;
-      grid-template-columns: 1.18fr 0.92fr;
+      grid-template-columns: 1.4fr 0.8fr;
       gap: 36px;
       align-items: center;
       position: relative;
@@ -303,7 +303,7 @@
     }
 
     .notice-headline {
-      font-size: clamp(2rem, 3.8vw, 2.9rem);
+      font-size: clamp(1.65rem, 2.35vw, 2.3rem);
       font-weight: 900;
       color: #ffffff;
       line-height: 1.25;
@@ -317,6 +317,7 @@
       padding: 2px 8px;
       border-radius: 8px;
       display: inline-block;
+      white-space: nowrap;
     }
 
     .notice-desc {
@@ -624,6 +625,15 @@
       }
       .mascot-frame {
         max-width: 290px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .notice-headline {
+        font-size: clamp(1.35rem, 5.8vw, 1.65rem);
+      }
+      .highlight-text {
+        white-space: normal;
       }
     }
   </style>
