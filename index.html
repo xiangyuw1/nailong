@@ -120,8 +120,60 @@
       letter-spacing: 1.2px;
       color: #fde68a;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       animation: bounceSlow 3.2s ease-in-out infinite;
+    }
+
+    /* 顶部常用系统快捷通道 (自适应宽屏展开/窄屏堆叠) */
+    .top-shortcuts-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px 14px;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .top-shortcut-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 16px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(12px);
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-shortcut-pill:hover {
+      background: rgba(245, 158, 11, 0.18);
+      border-color: rgba(245, 158, 11, 0.45);
+      color: #fde047;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.28);
+    }
+
+    .top-shortcut-pill .pill-icon {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 680px) {
+      .top-shortcuts-bar {
+        gap: 8px 10px;
+        margin-bottom: 20px;
+      }
+      .top-shortcut-pill {
+        font-size: 0.82rem;
+        padding: 6px 12px;
+      }
     }
 
     .badge-dot {
@@ -591,6 +643,30 @@
       <span>上海科技大学非官方页面 · 纯真奶龙精神分部</span>
     </div>
 
+    <!-- 顶部常用系统快捷通道 (自适应屏幕宽度：宽屏展开，窄屏堆叠) -->
+    <nav class="top-shortcuts-bar" aria-label="常用系统快捷直达">
+      <a href="https://egate-new.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="top-shortcut-pill" title="访问 egate 综合服务平台">
+        <span class="pill-icon">🔑</span>
+        <span>egate</span>
+      </a>
+      <a href="https://eams.shanghaitech.edu.cn" target="_blank" rel="noopener noreferrer" class="top-shortcut-pill" title="访问教务系统">
+        <span class="pill-icon">📚</span>
+        <span>教务系统</span>
+      </a>
+      <a href="https://elearning.shanghaitech.edu.cn:8443/" target="_blank" rel="noopener noreferrer" class="top-shortcut-pill" title="访问互动教学平台">
+        <span class="pill-icon">💡</span>
+        <span>互动教学平台</span>
+      </a>
+      <a href="https://ecourse.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="top-shortcut-pill" title="访问 E云课堂">
+        <span class="pill-icon">☁️</span>
+        <span>E云课堂</span>
+      </a>
+      <a href="https://mail.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer" class="top-shortcut-pill" title="访问邮件系统">
+        <span class="pill-icon">✉️</span>
+        <span>邮件系统</span>
+      </a>
+    </nav>
+
     <!-- 网页大标题 & 官方校徽 -->
     <header class="main-title-wrap">
       <div class="logo-badge-container">
@@ -628,7 +704,7 @@
             各位敬爱的上科大师生、未来校友、社会各界奶友及吃瓜群众：
           </p>
           <p>
-            <strong>本站为上海科技大学（ShanghaiTech）非官方民间门户与创新导航站</strong>，旨在为广大师生与校友提供温馨便捷的校园快捷导航与精神滋养。本站与上海科技大学官方机构无任何隶属关系，所有内容均为民间整理与创作，旨在提供便捷的校园信息导航与精神文化交流。
+            <strong>本站为上海科技大学（ShanghaiTech）非官方民间门户与创新导航站</strong>，旨在为广大师生与校友提供温馨便捷的校园快捷导航与精神滋养。本站与上海科技大学官方机构无任何隶属关系，所有内容均为民间整理与创作。
           </p>
           <p>
             如果您对本站有任何新的想法，欢迎提PR到 <a href="https://github.com/xiangyuw1/nailong" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">github.com/xiangyuw1/nailong</a>
@@ -790,7 +866,7 @@
 
     <!-- 页脚说明 -->
     <footer>
-      <p>© 2026 真 上海奶龙大学 (Real Shanghai Nailong University). All Rights Reserved.</p>
+      <p>© 2026 上海奶龙大学 (Shanghai Nailong University). All Rights Reserved.</p>
       <p style="margin-top: 4px; font-size: 0.82rem; color: #94a3b8;">
         上海科技大学非官方民间主页 · 荣誉校宠：奶蛙本蛙 (工号 001)
       </p>
